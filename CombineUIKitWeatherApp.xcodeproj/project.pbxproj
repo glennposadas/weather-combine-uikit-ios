@@ -13,6 +13,10 @@
 		4577A8A4261E363700BF6CDA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4577A8A2261E363700BF6CDA /* Main.storyboard */; };
 		4577A8A6261E363900BF6CDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4577A8A5261E363900BF6CDA /* Assets.xcassets */; };
 		4577A8A9261E363900BF6CDA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4577A8A7261E363900BF6CDA /* LaunchScreen.storyboard */; };
+		4577A8B3261E39ED00BF6CDA /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4577A8B2261E39ED00BF6CDA /* Models.swift */; };
+		4577A8B8261E3EE900BF6CDA /* UITextField+Publisher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4577A8B7261E3EE900BF6CDA /* UITextField+Publisher.swift */; };
+		4577A8BB261E43A200BF6CDA /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4577A8BA261E43A200BF6CDA /* API.swift */; };
+		4577A8BF261EE63400BF6CDA /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4577A8BE261EE63400BF6CDA /* ViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,10 @@
 		4577A8A5261E363900BF6CDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4577A8A8261E363900BF6CDA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4577A8AA261E363900BF6CDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4577A8B2261E39ED00BF6CDA /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		4577A8B7261E3EE900BF6CDA /* UITextField+Publisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Publisher.swift"; sourceTree = "<group>"; };
+		4577A8BA261E43A200BF6CDA /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		4577A8BE261EE63400BF6CDA /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,35 @@
 		4577A89B261E363700BF6CDA /* CombineUIKitWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
+				4577A8B5261E3EA300BF6CDA /* IMPORTANT STUFF */,
+				4577A8B6261E3EB500BF6CDA /* NON IMPORTANT STUFF */,
+			);
+			path = CombineUIKitWeatherApp;
+			sourceTree = "<group>";
+		};
+		4577A8B5261E3EA300BF6CDA /* IMPORTANT STUFF */ = {
+			isa = PBXGroup;
+			children = (
+				4577A8A2261E363700BF6CDA /* Main.storyboard */,
+				4577A8B2261E39ED00BF6CDA /* Models.swift */,
+				4577A8A0261E363700BF6CDA /* ViewController.swift */,
+				4577A8BE261EE63400BF6CDA /* ViewModel.swift */,
+				4577A8B7261E3EE900BF6CDA /* UITextField+Publisher.swift */,
+				4577A8BA261E43A200BF6CDA /* API.swift */,
+			);
+			path = "IMPORTANT STUFF";
+			sourceTree = "<group>";
+		};
+		4577A8B6261E3EB500BF6CDA /* NON IMPORTANT STUFF */ = {
+			isa = PBXGroup;
+			children = (
 				4577A89C261E363700BF6CDA /* AppDelegate.swift */,
 				4577A89E261E363700BF6CDA /* SceneDelegate.swift */,
-				4577A8A0261E363700BF6CDA /* ViewController.swift */,
-				4577A8A2261E363700BF6CDA /* Main.storyboard */,
 				4577A8A5261E363900BF6CDA /* Assets.xcassets */,
 				4577A8A7261E363900BF6CDA /* LaunchScreen.storyboard */,
 				4577A8AA261E363900BF6CDA /* Info.plist */,
 			);
-			path = CombineUIKitWeatherApp;
+			name = "NON IMPORTANT STUFF";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,6 +168,10 @@
 				4577A8A1261E363700BF6CDA /* ViewController.swift in Sources */,
 				4577A89D261E363700BF6CDA /* AppDelegate.swift in Sources */,
 				4577A89F261E363700BF6CDA /* SceneDelegate.swift in Sources */,
+				4577A8B8261E3EE900BF6CDA /* UITextField+Publisher.swift in Sources */,
+				4577A8BB261E43A200BF6CDA /* API.swift in Sources */,
+				4577A8B3261E39ED00BF6CDA /* Models.swift in Sources */,
+				4577A8BF261EE63400BF6CDA /* ViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="adV-Wq-Ges">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="Uct-sH-tdQ">
+            <objects>
+                <viewController id="zhr-XY-Ctu" customClass="ViewController" customModule="CombineUIKitWeatherApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="abP-lq-t0w">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Weather App" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CBs-em-ocF">
+                                <rect key="frame" x="16" y="112" width="382" height="41"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="rnC-z4-iK0">
+                                <rect key="frame" x="16" y="177" width="382" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="y4n-aR-Pzb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="words"/>
+                            </textField>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Rci-7v-ad0">
+                                <rect key="frame" x="16" y="229" width="382" height="31.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="1000" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1000" text="температура:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGD-3E-hnB">
+                                        <rect key="frame" x="0.0" y="0.0" width="125.5" height="31.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0.0 ºC" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLK-uB-QYL">
+                                        <rect key="frame" x="133.5" y="0.0" width="248.5" height="31.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="c6c-gx-V1V"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="c6c-gx-V1V" firstAttribute="trailing" secondItem="rnC-z4-iK0" secondAttribute="trailing" constant="16" id="9fK-Ci-3OI"/>
+                            <constraint firstItem="CBs-em-ocF" firstAttribute="top" secondItem="c6c-gx-V1V" secondAttribute="top" constant="24" id="MJD-CW-BU5"/>
+                            <constraint firstItem="CBs-em-ocF" firstAttribute="leading" secondItem="c6c-gx-V1V" secondAttribute="leading" constant="16" id="Vb8-qO-hAo"/>
+                            <constraint firstItem="rnC-z4-iK0" firstAttribute="leading" secondItem="c6c-gx-V1V" secondAttribute="leading" constant="16" id="WBD-0b-WQ5"/>
+                            <constraint firstItem="c6c-gx-V1V" firstAttribute="trailing" secondItem="CBs-em-ocF" secondAttribute="trailing" constant="16" id="eNT-Jx-9PW"/>
+                            <constraint firstItem="rnC-z4-iK0" firstAttribute="top" secondItem="CBs-em-ocF" secondAttribute="bottom" constant="24" id="ih5-B5-cNi"/>
+                            <constraint firstItem="c6c-gx-V1V" firstAttribute="trailing" secondItem="Rci-7v-ad0" secondAttribute="trailing" constant="16" id="nG5-t6-8jj"/>
+                            <constraint firstItem="Rci-7v-ad0" firstAttribute="leading" secondItem="c6c-gx-V1V" secondAttribute="leading" constant="16" id="rPT-rh-QoX"/>
+                            <constraint firstItem="Rci-7v-ad0" firstAttribute="top" secondItem="rnC-z4-iK0" secondAttribute="bottom" constant="8" id="ulJ-RV-2b4"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="79H-9y-DDG"/>
+                    <connections>
+                        <outlet property="cityTextField" destination="rnC-z4-iK0" id="zgZ-bd-lo6"/>
+                        <outlet property="tempLabel" destination="LLK-uB-QYL" id="mfB-Z9-L0I"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Oy-z2-LoL" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1042.0289855072465" y="112.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="WHx-Tk-aXN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="adV-Wq-Ges" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="VEm-Vj-Cbl">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="zhr-XY-Ctu" kind="relationship" relationship="rootViewController" id="NyB-5P-kTo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="99e-cz-87J" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="112.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
